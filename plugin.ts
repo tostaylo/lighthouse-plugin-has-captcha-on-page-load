@@ -1,11 +1,11 @@
 module.exports = {
 	// Additional audits to run on information Lighthouse gathered.
-	audits: [{ path: 'lighthouse-plugin-something/audits/has-something.js' }],
+	audits: [{ path: 'lighthouse-plugin-has-captcha-on-page-load/audits/has-captcha-on-page-load.js' }],
 
 	// A new category in the report for the plugin output.
 	category: {
-		title: 'Cats',
-		description: 'When integrated into your website effectively, cats deliver delight and bemusement.',
-		auditRefs: [{ id: 'has-cat-images-id', weight: 1 }]
+		title: 'Captcha',
+		description: 'Captcha appearing on page load can interfere with Lighthouse audits',
+		auditRefs: [{ id: 'has-captcha-on-page-load', weight: 1 }]
 	}
 };
