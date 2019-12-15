@@ -2,10 +2,10 @@
 
 This is a plugin for Google Lighthouse. The plugin's sole purpose is to identify captcha scripts found on page load.
 
-# Motivation
+## Motivation
 
 To identify whether certain web pages have captcha scripts which interfere with Lighthouse performance audits.
-[Repo](https://github.com/tostaylo/lighthouse-plugin-has-captcha-on-page-load)`
+[Repo](https://github.com/tostaylo/lighthouse-plugin-has-captcha-on-page-load)
 
 ## Install
 

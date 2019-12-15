@@ -1,6 +1,6 @@
 {
 	"name": "lighthouse-plugin-has-captcha-on-page-load",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "A plugin for Google's Lighthouse",
 	"main": "plugin.js",
 	"scripts": {
