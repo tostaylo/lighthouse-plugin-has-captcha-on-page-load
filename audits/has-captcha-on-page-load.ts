@@ -6,11 +6,10 @@ class CaptchaAudit extends Audit {
 	static get meta() {
 		return {
 			id: 'has-captcha-on-page-load',
-			title: 'Page does not have Captcha on page load',
+			title: 'Page does not have captcha on page load',
 			failureTitle: 'Captcha was found on page load.',
-			//Markdown links supported here
-			description:
-				'Captcha resources can be large and degrade page load performance. Make sure this page needs the captcha resources on page load. Possibly lazy load instead Link to read me ',
+			description: `Captcha resources can be large and degrade page load performance. Make sure this page needs captcha resources on page load. 
+      [More Info](https://github.com/tostaylo/lighthouse-plugin-has-captcha-on-page-load)`,
 			requiredArtifacts: ['ScriptElements']
 		};
 	}
@@ -20,7 +19,7 @@ class CaptchaAudit extends Audit {
 		//TODO: Tests?
 		//TODO: README
 		//TODO: CI
-		//TODO: Make adjustments to Lighthouse for tracking new field data and my plugin.
+		//TODO: Make adjustments to multi-lighthouse for tracking new field data and my plugin.
 		//TODO: Write failure code for sites that have failed captcha
 		//TODO: add link to readme in audits
 		const elementsWithCaptcha = artifacts.ScriptElements.filter(
