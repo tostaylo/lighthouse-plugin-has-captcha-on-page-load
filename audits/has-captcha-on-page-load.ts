@@ -15,13 +15,6 @@ class CaptchaAudit extends Audit {
 	}
 
 	static audit(artifacts: { ScriptElements: ScriptElement[] }, _context: any) {
-		//TODO: Add ts
-		//TODO: Tests?
-		//TODO: README
-		//TODO: CI
-		//TODO: Make adjustments to multi-lighthouse for tracking new field data and my plugin.
-		//TODO: Write failure code for sites that have failed captcha
-		//TODO: add link to readme in audits
 		const elementsWithCaptcha = artifacts.ScriptElements.filter(
 			(element: ScriptElement) => element.src && element.src.includes('captcha')
 		);
