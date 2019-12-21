@@ -4,7 +4,7 @@ This is a plugin for Google Lighthouse. The plugin's sole purpose is to identify
 
 ## Motivation
 
-To identify whether certain web pages have captcha scripts which interfere with Lighthouse performance audits.
+To identify whether certain web pages have captcha scripts which interfere with Lighthouse performance audits. Doing automated Lighthouse testing on a sample of websites I noticed some sites had suspiciously high scores. I tested the suspicious sites with Lighthouse manually and observed a Captcha page was being loaded instead of the actual content for the url given. I suspect this may be due to running Chrome in incognito mode while testing but have not confirmed.
 [Repo](https://github.com/tostaylo/lighthouse-plugin-has-captcha-on-page-load)
 
 ## Install

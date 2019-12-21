@@ -8,7 +8,9 @@ class CaptchaAudit extends Audit {
 			id: 'has-captcha-on-page-load',
 			title: 'Page does not have captcha on page load',
 			failureTitle: 'Captcha was found on page load.',
-			description: `Captcha resources can be large and degrade page load performance. Make sure this page needs captcha resources on page load. 
+			description: `Captcha resources can be large and degrade page load performance. 
+      They can also interfere with the accuracy of Lighthouse performance audits. 
+      Make sure this page needs captcha resources on page load. 
       [More Info](https://github.com/tostaylo/lighthouse-plugin-has-captcha-on-page-load)`,
 			requiredArtifacts: ['ScriptElements']
 		};
@@ -23,7 +25,6 @@ class CaptchaAudit extends Audit {
 			score: 0,
 			scoreDisplayMode: 'binary',
 			displayValue: `${elementsWithCaptcha.length} Captcha requests found`,
-			explanation: '3 script tags were found',
 			details: {
 				type: 'table',
 				headings: [

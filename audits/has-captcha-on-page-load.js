@@ -24,7 +24,7 @@ var CaptchaAudit = /** @class */ (function (_super) {
                 id: 'has-captcha-on-page-load',
                 title: 'Page does not have captcha on page load',
                 failureTitle: 'Captcha was found on page load.',
-                description: "Captcha resources can be large and degrade page load performance. Make sure this page needs captcha resources on page load. \n      [More Info](https://github.com/tostaylo/lighthouse-plugin-has-captcha-on-page-load)",
+                description: "Captcha resources can be large and degrade page load performance. \n      They can also interfere with the accuracy of Lighthouse performance audits. \n      Make sure this page needs captcha resources on page load. \n      [More Info](https://github.com/tostaylo/lighthouse-plugin-has-captcha-on-page-load)",
                 requiredArtifacts: ['ScriptElements']
             };
         },
@@ -38,7 +38,6 @@ var CaptchaAudit = /** @class */ (function (_super) {
             score: 0,
             scoreDisplayMode: 'binary',
             displayValue: elementsWithCaptcha.length + " Captcha requests found",
-            explanation: '3 script tags were found',
             details: {
                 type: 'table',
                 headings: [
